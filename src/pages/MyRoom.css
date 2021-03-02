@@ -1,0 +1,22 @@
+.myRoom{
+    margin-top: 80px;
+}
+
+.upper-content{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    text-decoration: none;
+    color: wheat;
+}
+.upper-content a{
+    color: wheat;
+    text-decoration: none;
+  }
+
+.bottom-content{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    color: wheat;
+}

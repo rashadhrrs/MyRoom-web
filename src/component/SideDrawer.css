@@ -1,0 +1,28 @@
+
+.side-drawer ul {
+    height: 100%;
+    background: #1e2a42;
+    position: fixed;
+    top: 20;
+    left: 10;
+    max-width: 40px;
+    z-index: 100;
+    height: fit-content;
+    /* border-right: 2px solid #f1be7b; */
+}
+
+.side-drawer li {
+    list-style: none;
+    margin-top: 20px;
+    
+}
+
+.side-drawer a {
+    color: #f1be7b;
+    text-decoration: none;
+}
+
+.side-drawer a:hover,
+.side-drawer a:active {
+    color: #23C7C6;
+}
