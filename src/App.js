@@ -1,18 +1,18 @@
 import "./App.css";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import MyRoom from "./pages/MyRoom";
-import Header from "./component/Header";
 import RecRoom from "./pages/RecRoom";
+import Room1 from './pages/Room1'
 
 function App() {
   return (
     <div className="App">
       <div className="content">
-        <Header />
         <div>
           <Router>
-            <Route exact path="/" component={MyRoom} />
-            <Route exact path="/RecRoom" component={RecRoom} />
+            <Route exact path="/" render={(props) => <MyRoom {...props} />} />
+            <Route exact path="/RecRoom"  render={(props) => <RecRoom {...props} />} />
+            <Route exact path= "/Room1" render={(props) => <Room1 {...props}/>} />
           </Router>
         </div>
       </div>

@@ -1,5 +1,5 @@
 .myRoom{
-    margin-top: 80px;
+    margin-top: 100px;
 }
 
 .upper-content{
@@ -19,4 +19,9 @@
     justify-content: center;
     margin: 20px;
     color: wheat;
+}
+
+.bottom-content a{
+  color: wheat;
+  text-decoration: none;
 }

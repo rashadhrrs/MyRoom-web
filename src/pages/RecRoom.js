@@ -3,11 +3,16 @@ import "./RecRoom.css";
 import Popup from "../component/Popup";
 import SideDrawer from "../component/SideDrawer";
 import { Button } from "@material-ui/core";
+import Header from "../component/Header";
 
-export default function ReceptionRoom() {
+
+export default function ReceptionRoom(props) {
+  const { history } = props;
   const [openPopup, setOpenPopup] = useState(false);
   const [popupTv, setPopupTv] = useState(false);
   return (
+    <>
+    <Header {...props} />
     <div className="recRoom">
       <div style={{ flexDirection: "row", marginRight: "20px" }}>
         <div
@@ -173,5 +178,5 @@ export default function ReceptionRoom() {
       </div>
       </Popup>
     </div>
-  );
+  </>);
 }
